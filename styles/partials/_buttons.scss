@@ -1,0 +1,42 @@
+.readMore, 
+.findOutMore {
+    background-color: $shadowColor;
+    border:none;
+    color: $secondary;
+    font-family: $mainFont;
+    margin: 3rem 0;
+
+}
+
+
+
+.findOutMore p,
+.readMore p {
+    font-family: $mainFont;
+    color:$secondary;
+    line-height: 41.6px;
+    padding: 0 10px;
+    
+
+
+}
+
+button:visited {
+    color: $shadowColor;
+  }
+  
+button:hover {
+    
+    background-color: $fontColor;
+  }
+  
+  
+button:active {
+    outline: 1px solid darkgrey;
+  }
+
+button:focus {
+    outline: 5px solid red;
+}
+
+

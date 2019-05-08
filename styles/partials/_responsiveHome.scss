@@ -1,0 +1,146 @@
+// RESPONSIVE FOR HOME.HTML
+
+@media (max-width:1327px) {
+
+    #girl {
+        margin-top: 0;
+    }
+
+    #toy {
+        margin-top: 1rem;
+    }
+
+    .homeHeaderImage {
+        width:45%;
+    }
+
+}
+
+@media (max-width:1265px) {
+
+    .programPhoto,
+    .text {
+        width:45%;
+    }
+
+}
+
+
+
+@media (max-width: 1250px) {
+
+    .homeHeaderImage {
+        margin-left:0;
+        margin-bottom: 0;
+        width: 45%;
+    }
+
+    .homeHeader h1 {
+        padding:3rem;
+    }
+    .events .wrapper {
+        display:flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .events {
+        padding: 5rem 0;;
+    
+    }
+
+    .eventsText {
+        width: 107%;
+    }
+
+    .eventsPhoto  {
+        width:40%;
+        margin: 0 0 2rem 7rem;
+    }
+
+
+    .photo {
+        padding:1rem 1rem;
+    }
+}
+
+
+@media (max-width: 950px) {
+
+    .homeHeader h1 {
+        font-size: 100px;
+    }
+
+    .homeHeaderImage {
+        width: 45%;
+    }
+
+
+    .ourPrograms {
+        display: flex;
+        flex-direction:column;
+        padding :4rem 0;
+    }
+
+    .ourPrograms h2 {
+        margin:0;
+    }
+
+    .programPhoto {
+
+     width:50%;
+     margin: 0 auto;
+    }
+
+    .text {
+    width:50%;
+     margin: 0 auto;
+    
+    }
+
+    .programText1 {
+        padding-top: 4rem;
+    }
+
+    .information .wrapper {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding:0;
+    }
+
+    .info {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .information {
+        padding: 4rem 0;
+    }
+
+    .homeHeader h1 {
+        font-size: 60px;
+    }
+
+    .text {
+        width: 70%;
+    }
+
+
+}
+
+
+@media (max-width: 518px) {
+
+    .roadTrip {
+        text-align: left;
+    }
+
+    .gallery .wrapper {
+        display: flex;
+        flex-direction: column;
+        padding:1rem 1rem;
+
+    }
+
+}

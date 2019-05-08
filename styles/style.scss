@@ -1,0 +1,1153 @@
+$primary: #03697c;
+$secondary:#474bb5;
+$tertiary: #044779;
+$fontColor: #f3faff;
+$shadowColor:#08fded;
+
+$mainFont:'Walter turncoat';
+$paraFont: 'Roboto';
+
+@import "partials/normalize";
+@import "partials/nav";
+@import "partials/buttons";
+@import "partials/shadows";
+
+
+.wrapper {
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: $mainFont;
+    color: $fontColor;
+    font-size: 9vw;
+    margin: 0;
+
+}
+
+h2 {
+    color: $fontColor;
+    font-family: $mainFont;
+    margin: 1rem 0;
+    font-size: 40px;
+    
+}
+
+p {
+    color: $fontColor;
+    font-family: $paraFont;
+    margin:0;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+header i {
+    visibility: hidden;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 3rem;
+    color: $fontColor;
+}
+
+
+// HOME PAGE STYLES!! (index.html)
+
+
+
+.homeHeader {
+    background: url('../assets/homeHeader.jpg');
+    background-size: cover;	
+    height: 100vh;
+    min-width: 100vw;
+    background-position: center center no-repeat;
+   
+  }
+
+  .headerContent {
+      display:flex;
+      padding-top:14rem;
+
+  }
+
+  .title {
+      width: 60%;
+      padding-left:6rem;
+  }
+
+  .skateboard {
+      width: 40%;
+  }
+
+
+// information
+
+.information {
+  display: flex;
+  background-color: $primary;
+  padding: 16rem 0 6rem 0;
+}
+
+.information .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+
+.info {
+    width: 49%;
+    padding: 0 1%;
+}
+
+
+// our programs
+
+.ourPrograms {
+    background-color: $secondary;
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.programPhoto,
+.text {
+    width: 40%;
+
+}
+
+.programText2 {
+    text-align:end;
+}
+
+#toy {
+    margin-top: 1rem;
+}
+
+#girl {
+    margin-top: -1rem;
+}
+
+// /roadtrip section
+
+.roadTrip {
+    text-align: center;
+    background-color: $primary;
+    padding:5rem;
+}
+
+// events section
+
+.events {
+    background-color: $primary;
+    display: flex;
+    padding: 5rem 0;
+}
+
+.events .wrapper {
+    display: flex;
+}
+
+
+
+
+
+.eventsText {
+    width: calc(80% - 6rem);
+    padding-left: 6rem;
+}
+
+// gallery styles
+
+.gallery {
+    background: $secondary;
+    display: flex;
+}
+
+.gallery .wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.photo {
+    width: calc(33.3%-1rem);
+    padding: 3rem 1rem;
+}
+
+
+
+footer {
+    background-color: $tertiary;
+    text-align: center;
+}
+
+
+
+// -------------------------RESPONSIVE DESIGN FOR HOME PAGE------------------
+
+@media (max-width:1327px) {
+
+    #girl {
+        margin-top: 0;
+    }
+
+    #toy {
+        margin-top: 1rem;
+    }
+
+}
+
+@media (max-width: 1250px) {
+
+    .title h1 {
+        margin: 0 auto;
+    }
+
+
+    .ourPrograms {
+        display: flex;
+        flex-direction:column;
+        padding: 4rem 0;
+    }
+
+    .ourPrograms h2 {
+        margin:0;
+    }
+
+    .programPhoto {
+     width:44%;
+     margin: 0 auto;
+
+    }
+
+    .text {
+     width:70%;
+     margin: 0 auto;
+    
+    }
+
+    .programText1 {
+        padding-top: 4rem;
+    }
+
+    .programText1,
+    .programText2 {
+        text-align: center;
+    }
+
+
+
+    .events .wrapper {
+        display:flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .events {
+        padding: 5rem 0;;
+    
+    }
+  
+
+    .eventsText {
+        width: 100%;
+        text-align: center;
+    }
+
+
+}
+
+@media (max-width: 1092px) {
+
+    .skateboard {
+        position: absolute;
+        display: none;
+    }
+
+    .title {
+        margin: 0 auto;
+    }
+
+    .information {
+        padding: 5rem 0;
+    }
+
+    .eventsPhoto {
+        display: none;
+    }
+  
+}
+
+@media (max-width: 950px) {
+
+    .title h1 {
+      text-align: center; 
+  }
+
+ 
+
+    .ourPrograms {
+        display: flex;
+        flex-direction:column;
+        padding: 4rem 0;
+    }
+
+    .ourPrograms h2 {
+        margin:0;
+    }
+
+    .programPhoto {
+     width:40%;
+     margin: 0 auto;
+
+    }
+
+    .text {
+     width:50%;
+     margin: 0 auto;
+    
+    }
+
+    .programText1 {
+        padding-top: 4rem;
+    }
+
+    .programText1,
+    .programText2 {
+        text-align: center;
+    }
+
+    .information .wrapper {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding:0;
+    }
+
+    .info {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .information {
+        padding: 4rem 0;
+    }
+
+   .gallery .wrapper {
+       display:flex;
+       flex-direction: column;
+   }
+    
+    .homeHeader ul li {
+       padding: 10px;
+   }
+
+   .title  {
+    padding-left: 0;
+   }
+
+}
+
+@media (max-width:867px) {
+
+    .title {
+        margin:0 auto;
+    }
+    .homeHeader h1 {
+        font-size: 12vw;
+        padding-top: 2rem;
+    }
+
+    .homeMain p {
+        font-size: 15px;
+    }
+
+    .homeHeader ul li {
+        padding: 5px;
+        margin: 0 auto;
+    }
+
+     .homeMain h2 {
+         font-size: 35px;
+     }
+
+     header i {
+         visibility: visible;
+     }
+
+     header nav {
+         display: none;
+     }
+
+ 
+}
+
+@media (max-width: 600px) {
+
+
+
+}
+
+@media (max-width: 518px) {
+
+    .roadTrip {
+        text-align: left;
+    }
+
+    .gallery .wrapper {
+        display: flex;
+        flex-direction: column;
+        padding:1rem 1rem;
+
+    }
+
+    @media (max-width: 339px) {
+        .findOutMore {
+            padding:0;
+        }
+    }
+
+}
+
+
+
+// ----------------------BLOG PAGE SECTION (BLOG.HTML)------------------------
+
+.blogHeader {
+background: url('../assets/blogHeader.jpg');
+
+background-position: no-repeat center center;
+background-size:cover;
+height: 75vh;
+
+min-width: 100%;
+width:100%; 
+
+
+}
+
+.blogMain {
+    background-color: $primary;
+}
+
+// our mission (aside) section
+
+aside {
+    background-color: $secondary;
+    width: 31%;
+    height:50%;
+    padding-top: 25rem;
+    margin-top: 10rem;
+    margin-left: 5rem;
+}
+
+.recentPosts ul li {
+    list-style-type: none;
+    padding: 3px;
+    margin:0;
+    color: $fontColor;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+
+.recentPosts ul li:before {
+    content: "\2022";
+    color: $shadowColor;
+    padding: 5px;
+}
+// source for bullet content code: https://www.w3schools.com/howto/howto_css_bullet_color.asp
+
+.recentPosts ul {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.blogImage {
+    width: 31%;
+    position: absolute;
+    left: 0rem;
+    top: 47rem;
+}
+
+.recentPosts,
+.blogList,
+.mission {
+    padding-left:1rem;
+}
+
+
+.flexContainer {
+    display:flex;
+    flex-direction: row;
+}
+
+.blogList a:visited {
+    color: grey;
+  }
+  
+.blogList a:hover {
+    border-bottom: 3px solid $shadowColor;
+  }
+  
+  
+.blogList a:active {
+    outline: 1px solid gray;
+  }
+  
+.blogList a:focus {
+    border: 1px solid $shadowColor;
+  }
+
+// 'new activities' section
+
+.newActivities {
+    
+    width: 68%;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 7rem;
+    border-bottom: 6px solid $shadowColor;
+    border-left:   6px solid $shadowColor; 
+
+}
+
+.activityText {
+  margin: 0 5rem;
+  padding: 3rem 0;
+}
+
+.activityText p {
+    margin: 1rem 0;
+}
+
+
+.activitiesPhoto  {
+    width: 98.3%;
+    margin-top: -11rem;
+    box-shadow: -20px 20px #08fded;
+    margin-left: 14px;
+    
+    
+}
+
+
+// 'comment' section
+
+.commentPhoto img{
+    width: 5rem;
+   
+}
+
+.comments {
+    width: 65%;
+    display:flex;
+    flex-direction: column;
+    margin-left: 35%;
+    padding: 3rem 0;
+   
+}
+
+.comments p {
+    margin-bottom: 1rem;
+   
+}
+
+.commentPhoto {
+    margin-right: 5%;
+}
+
+.tuesday, 
+.wednesday {
+    display:flex;
+    padding:2rem 0;
+   
+}
+
+// blog form styles
+
+.blogForm {
+    display:flex;
+    flex-wrap:wrap;
+    background-color: $primary;
+   
+}
+
+.blogForm input[type=email] {
+    width: 50%;
+}
+
+.blogForm input[type=email],
+.blogForm input[type=text],
+.blogForm textarea {
+    
+    border: none;
+    color: $fontColor;
+    background-color: $primary;
+    display: flex;
+    border-bottom: 2px solid $shadowColor;
+    font-size: 24.4px;
+    font-family: $paraFont;
+    margin: 2rem 0;
+
+
+}
+
+.blogForm input[type=text] {
+    width: 48%;
+    margin-right: 2%;
+}
+
+
+.blogForm input[type=submit] {
+    background-color: $shadowColor;
+    font-family: $mainFont;
+    width: 100%;
+    color: $secondary;
+    padding: 2px;
+    font-size: 25.4px;
+    border: none;
+    margin: 2rem 0;
+    
+  }
+
+.blogForm input[type=email], 
+.bliogForm input[type=text] {
+
+    display:flex;
+    flex-direction: row;
+
+}
+
+.blogForm textarea {
+    resize: none;
+    overflow: hidden;
+    width: 100%;
+    height: 15rem;
+    background-color: $primary;
+    border: 2px solid $shadowColor;
+
+}
+
+
+
+
+// ------------------------RESPONSIVE DESIGN FOR BLOG PAGE-------------------
+
+
+@media (max-width:1259px) {
+
+
+    .recentPosts ul li a,
+    .blogMain p {
+        font-size: 15px;
+    }
+
+    .blogList {
+        padding: 0;
+    }
+
+    .recentPosts ul {
+        flex-direction: row;
+    }
+
+    .blogMain h2 {
+        font-size: 35px;
+    }
+
+    .blogForm input[type=email], 
+    .blogForm input[type=text],
+    .blogForm textarea,
+    .blogForm input[type=submit] {
+        
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1256px) {
+
+    .recentPosts .blogList {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:1157px) {
+
+    .flexContainer {
+        flex-direction: column;
+        
+    }
+
+    .newActivities {
+        width: 80%;
+        border: 6px solid $shadowColor;
+        margin: 0 auto;
+    }
+
+    .comments {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    aside {
+        width: 80%;
+        margin:0 auto;
+        padding: 2rem 0;
+        margin-top: 5rem;
+        margin-bottom: 16rem;
+    }
+
+
+    .blogHeader h1 {
+        text-align:center;
+        padding-top: 8rem;
+        
+    }
+
+    .blogHeader ul li {
+        margin:0 auto;
+    }
+
+    .blogImage {
+        width: 31%;
+        position: absolute;
+        left: 0rem;
+        top: 47rem;
+        display:none;
+    }
+
+}
+
+
+@media (max-width:1090px) {
+
+.recentPosts ul {
+    flex-direction:column;
+
+}
+
+.activitiesPhoto {
+    box-shadow: none;
+    width: 100%;
+    margin-left: 0;
+  
+}
+.newActivities {
+    border:none;
+}
+
+}
+
+
+@media (max-width:763px) {
+
+    .blogHeader h1 {
+        font-size: 70px;
+    }
+
+    .blogHeader i {
+        visibility: visible;
+    }
+
+    .blogImage {
+        width: 24%;
+        position: absolute;
+        left: 28rem;
+        top: 57rem;
+        
+    }
+
+    .blogForm {
+        display:flex;
+        flex-direction: column;
+
+    }
+
+    .blogForm input[type=email], 
+    .blogForm input[type=text],
+    .blogForm textarea,
+    .blogForm input[type=submit] {
+        width: 100%;
+        
+    }
+
+    .tuesday,
+    .wednesday {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .commentText {
+        width: 100%;
+    }
+
+    .blogHeader i {
+        visibility: visible;
+
+    }
+
+    .blogHeader nav {
+        display: none;
+    }
+
+
+}
+
+@media (max-width:701px) {
+
+    .blogImage {
+        visibility: hidden;
+    }
+
+    .commentText {
+        width: 70%;
+    }
+
+    .newActivities {
+        width: 70%;
+    }
+
+    .activityText {
+        margin: 0 2rem;
+    }
+
+    .blogHeader h1 {
+        font-size: 60px;
+    }
+
+    .blogImage {
+        width: 31%;
+        position: absolute;
+        left: 0rem;
+        top: 47rem;
+        display: none;
+    }
+
+   
+    .tuesday, 
+    .wednesday {
+        padding: 2rem 0 ;
+        
+    }
+
+    .commentText {
+        width: 100%;
+    }   
+
+}
+
+@media (max-width: 400px) {
+
+    .blogHeader nav ul li {
+        padding: 2rem 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+// CONTACT PAGE STYLES
+
+.contactHeader {
+    background: url('../assets/contactHeader.jpg');    
+    background-position: no-repeat center center;
+    background-size:cover;
+    height: 75vh;  
+    min-width: 100%;
+    width:100%;                       
+}
+
+.contactHeader nav,
+.contactHeader h1 {
+    margin-left: 5rem;
+}
+
+.contactMain {
+    background-color: $primary;
+    display:flex;
+}
+
+.contactLinks {
+    display: flex;
+    margin: 0 auto;
+       
+}
+
+.contactLinks a {
+    color: $fontColor;
+    font-size: 20px;
+    padding-right: 2rem;
+    line-height: 28px;
+}
+
+
+
+.contactInfo,
+.contactLinks,
+.contactNumber
+ {
+    padding: 2rem 0;
+    margin:0 auto;
+}
+
+.contactLinks a:visited {
+    color: $shadowColor;
+  }
+  
+.contactLinks a:hover {
+    color: $tertiary;
+  }
+  
+  
+ .contactLinks a:active {
+    outline: 1px solid gray;
+  }
+
+  .contactLinks a:focus {
+    border: 1px solid $shadowColor;
+  }
+  
+
+
+// -----------------RESPONSIVE DESIGN FOR CONTACT SECTION--------------------
+
+
+@media (max-width: 1147px) {
+    .contactInfo p,
+    .contactLinks ,
+    .contactNumber p {
+        font-size: 15px;
+    }
+
+    .contactLinks a {
+        padding-right: 1rem;
+    }
+
+    .form input[type=email], 
+    .form input[type=text],
+    .form textarea,
+    .form input[type=submit] {
+
+        font-size: 15px;
+    }
+
+    .contactHeader h1 {
+        font-size: 90px;
+    }
+
+}
+
+@media (max-width: 1026px) {
+
+    .contactMain .form {
+        display:flex;
+        flex-direction: column;
+        box-shadow: none;
+      
+
+    }
+
+    .form input[type=email], 
+    .form input[type=text],
+    .form textarea,
+    .form input[type=submit] {
+        width: 100%;
+           
+    }
+
+    .contactHeader h1 {
+        font-size: 85px;
+    }
+
+ 
+    @media (max-width: 970px) {
+
+    .contactHeader h1 {
+        font-size: 80px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    }
+
+    .contactMain {
+        flex-direction: column-reverse;
+        padding: 5rem 0;
+    
+     }
+    .contactMain .form {
+        text-align:center;
+        margin: 0 auto;
+        width: 70%;
+     }
+
+
+    .contactHeader i {
+        visibility: visible;
+
+    }
+
+    .contactHeader nav {
+        display: none;
+    }
+
+    .contactHeader h1 {
+        padding-top:8rem;
+    }
+
+
+
+}
+
+@media (max-width:746px) {
+
+    .contactHeader h1 {
+        font-size: 70px;
+      
+    }
+
+    .contactHeader ul li {
+        padding: 5px;
+        
+    }
+
+}
+
+@media (max-width: 594px) {
+
+    .contactHeader h1 {
+        font-size: 50px;
+    }
+
+}
+
+@media (max-width: 438px) {
+
+    .contactMain .form {
+        width: 100%;
+    }
+
+
+    .contactHeader h1 {
+        font-size: 40px;
+    }
+
+    .contactHeader nav {
+        margin-left: 0;
+    }
+
+
+}
+
+
+
+// FORM
+.form {
+    width: 60%;
+    display:flex;
+    flex-wrap:wrap;
+    background-color: $secondary;
+    padding: 1rem 5rem;
+    margin: -4rem 4rem 7rem 0;
+    box-shadow: 20px 20px $shadowColor;
+   
+}
+
+input[type=email] {
+    width: 50%;
+}
+
+input[type=email],
+input[type=text],
+textarea {
+    
+    border: none;
+    color: $fontColor;
+    background-color: $secondary;
+    display: flex;
+    border-bottom: 2px solid $fontColor;
+    font-size: 24.4px;
+    font-family: $paraFont;
+    margin: 2rem 0;
+
+
+}
+
+input[type=text] {
+    width: 48%;
+    margin-right: 2%;
+}
+
+
+input[type=submit] {
+    background-color: $shadowColor;
+    font-family: $mainFont;
+    width: 100%;
+    color: $secondary;
+    padding: 2px;
+    font-size: 25.4px;
+    border: none;
+    margin: 2rem 0;
+    
+  }
+
+input[type=email], 
+input[type=text] {
+
+display:flex;
+flex-direction: row;
+
+}
+
+textarea {
+resize: none;
+overflow: hidden;
+width: 100%;
+height: 15rem;
+background-color: $secondary;
+border: 2px solid $fontColor;
+
+}
+
+// ^ source for message section of form: https://www.w3schools.com/howto/howto_css_contact_section.asp
+
+input { 
+    padding:1rem 0;
+}
+
+textarea {
+    padding:1rem 0;
+}
+
+h2 i {
+    background: #08fded;
+    color: #474bb5;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px; 
+    vertical-align: middle;
+    padding: 10px;
+    font-size: 25px;
+    margin-right: 20px;
+
+    
+ }
+
+

@@ -1,0 +1,42 @@
+
+ul {
+    display: flex;
+    list-style: none;
+    padding-left:0;
+       li {
+      padding: 2rem;
+      margin:3rem 0;
+      padding-left: 0;
+   
+        a {
+          text-decoration:none;
+          color: $fontColor;
+          font-size: 20px;
+          line-height: 28px;
+          letter-spacing: 1px;
+        }
+    }
+}
+
+ul li a:link {
+  color: $fontColor;
+}
+ul li a:visited {
+  color: rgba(8, 253, 237, 0.1);
+}
+
+ul li a:hover {
+  border-bottom: 3px solid $shadowColor;
+}
+
+ul li a:focus {
+  border: 1px solid $shadowColor;
+}
+
+
+ul li a:active {
+  outline: 1px solid gray;
+}
+
+
+
